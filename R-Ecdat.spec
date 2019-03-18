@@ -4,13 +4,12 @@
 #
 Name     : R-Ecdat
 Version  : 0.3.1
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/Ecdat_0.3-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Ecdat_0.3-1.tar.gz
 Summary  : Data Sets for Econometrics
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-Ecfun
 BuildRequires : R-Ecfun
 BuildRequires : buildreq-R
 
@@ -25,10 +24,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552888498
+export SOURCE_DATE_EPOCH=1552903845
 
 %install
-export SOURCE_DATE_EPOCH=1552888498
+export SOURCE_DATE_EPOCH=1552903845
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
