@@ -4,7 +4,7 @@
 #
 Name     : R-Ecdat
 Version  : 0.3.3
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/Ecdat_0.3-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Ecdat_0.3-3.tar.gz
 Summary  : Data Sets for Econometrics
@@ -13,6 +13,7 @@ License  : GPL-2.0+
 Requires: R-Ecfun
 BuildRequires : R-Ecfun
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 This package contains data sets of potential interest in the study of economics, econometrics, and political science more generally.
@@ -25,10 +26,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569852012
+export SOURCE_DATE_EPOCH=1571821843
 
 %install
-export SOURCE_DATE_EPOCH=1569852012
+export SOURCE_DATE_EPOCH=1571821843
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
