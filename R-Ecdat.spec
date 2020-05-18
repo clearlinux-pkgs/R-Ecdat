@@ -4,18 +4,14 @@
 #
 Name     : R-Ecdat
 Version  : 0.3.7
-Release  : 33
+Release  : 34
 URL      : https://cran.r-project.org/src/contrib/Ecdat_0.3-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Ecdat_0.3-7.tar.gz
 Summary  : Data Sets for Econometrics
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-Ecfun
-Requires: R-plm
-Requires: R-wooldridge
 BuildRequires : R-Ecfun
-BuildRequires : R-plm
-BuildRequires : R-wooldridge
 BuildRequires : buildreq-R
 
 %description
@@ -23,21 +19,22 @@ This package contains data sets of potential interest in the study of economics,
 
 %prep
 %setup -q -c -n Ecdat
+cd %{_builddir}/Ecdat
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581358011
+export SOURCE_DATE_EPOCH=1589788359
 
 %install
-export SOURCE_DATE_EPOCH=1581358011
+export SOURCE_DATE_EPOCH=1589788359
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
