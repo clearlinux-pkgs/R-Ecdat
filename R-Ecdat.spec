@@ -4,7 +4,7 @@
 #
 Name     : R-Ecdat
 Version  : 0.3.9
-Release  : 44
+Release  : 45
 URL      : https://cran.r-project.org/src/contrib/Ecdat_0.3-9.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Ecdat_0.3-9.tar.gz
 Summary  : Data Sets for Econometrics
